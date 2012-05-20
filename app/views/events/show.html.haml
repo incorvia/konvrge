@@ -1,0 +1,22 @@
+%section.container
+  .content
+    .row
+      = render 'shared/menu_bar'
+      = render 'events/header'
+      .q-a
+        - if user_signed_in?
+          = render 'questions/ask'
+        = render @questions
+      .span4
+        .top-photos
+          %a{:href => event_photos_path(@event)}
+            %h5
+              Photos
+              = "(" + @event.photos.count.to_s + ")"
+          - if @top_photos.count > 0
+            = render :partial => 'photos/top', :collection => @top_photos
+          - else
+            .round{:style => "background-image: url(#{asset_path "event_default.png"}); height: 100px; width: 150px;"}
+              - if user_signed_in?
+                = link_to (image_tag 'event_default.png', :class => 'add last'), "#", :class => 'rollout', "data-modal" => 'new_photo'
+              - image_tag 'event_default.png'

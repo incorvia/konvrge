@@ -1,0 +1,12 @@
+%section.container
+  .content
+    .row
+      = render 'shared/menu_bar'
+      .span8
+        .main-block
+          = render events_friended_paginated
+        = paginate paginator
+      .span4
+        .info-graphic
+          %h3 Konvrge
+          %p Where Harvard's questions, answers, and photographs konvrge to create the news. 

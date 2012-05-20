@@ -1,0 +1,27 @@
+%header.topbar
+  .fill
+    .container
+      %a.brand{:href => root_path}
+        &gt; Konvrge
+      - if flash[:notice]
+        #flash
+          %p
+            = flash[:notice]
+      - if user_signed_in?
+        %ul.nav.secondary-nav
+          %li
+            = link_to "Report News", '#', :class => 'rollout', "data-modal" => 'new_event' 
+          %li.dropdown{'data-dropdown' => 'dropdown'}
+            %a.dropdown-toggle{:href => '#'} My Account
+            %ul.dropdown-menu
+              %li
+                %a{:href => edit_user_path(current_user)} Account
+              %li.divider
+              %li
+                = link_to('Logout', destroy_user_session_path, :method => :delete)
+        = render 'events/new_event_modal'
+      - else
+        %ul.nav.secondary-nav
+          %li
+            = link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook)
+

@@ -1,0 +1,155 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AddAnswersToVotes	db/migrate/20120203003900_add_answers_to_votes.rb	/^class AddAnswersToVotes < ActiveRecord::Migration$/;"	c
+AddCountsToEvents	db/migrate/20120131212548_add_counts_to_events.rb	/^class AddCountsToEvents < ActiveRecord::Migration$/;"	c
+AddEventIdToQuestions	db/migrate/20120201201141_add_event_id_to_questions.rb	/^class AddEventIdToQuestions < ActiveRecord::Migration$/;"	c
+AddIdNameUsernameToUser	db/migrate/20120130204923_add_id_name_username_to_user.rb	/^class AddIdNameUsernameToUser < ActiveRecord::Migration$/;"	c
+AddNameAndIdToAnswers	db/migrate/20120202002802_add_name_and_id_to_answers.rb	/^class AddNameAndIdToAnswers < ActiveRecord::Migration$/;"	c
+AddNameToEvents	db/migrate/20120201203110_add_name_to_events.rb	/^class AddNameToEvents < ActiveRecord::Migration$/;"	c
+AddQuestionToVotes	db/migrate/20120202162352_add_question_to_votes.rb	/^class AddQuestionToVotes < ActiveRecord::Migration$/;"	c
+AddQuestonIdToAnswers	db/migrate/20120201224610_add_queston_id_to_answers.rb	/^class AddQuestonIdToAnswers < ActiveRecord::Migration$/;"	c
+AddScoreToEvents	db/migrate/20120131041432_add_score_to_events.rb	/^class AddScoreToEvents < ActiveRecord::Migration$/;"	c
+AddTokenToUser	db/migrate/20120130200553_add_token_to_user.rb	/^class AddTokenToUser < ActiveRecord::Migration$/;"	c
+AddVoteCountToEvents	db/migrate/20120202021919_add_vote_count_to_events.rb	/^class AddVoteCountToEvents < ActiveRecord::Migration$/;"	c
+AddVoteCountsToAnswers	db/migrate/20120203192335_add_vote_counts_to_answers.rb	/^class AddVoteCountsToAnswers < ActiveRecord::Migration$/;"	c
+AddVoteableToQuestion	db/migrate/20120202162137_add_voteable_to_question.rb	/^class AddVoteableToQuestion < ActiveRecord::Migration$/;"	c
+Answer	app/models/answer.rb	/^class Answer$/;"	c
+AnswersController	app/controllers/answers_controller.rb	/^class AnswersController < ApplicationController$/;"	c
+AnswersHelper	app/helpers/answers_helper.rb	/^module AnswersHelper$/;"	m
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:Konvrge
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+ChangeColumnTypeVotesFbId	db/migrate/20120203044104_change_column_type_votes_fb_id.rb	/^class ChangeColumnTypeVotesFbId < ActiveRecord::Migration$/;"	c
+CreateAnswers	db/migrate/20120201215209_create_answers.rb	/^class CreateAnswers < ActiveRecord::Migration$/;"	c
+CreateEvents	db/migrate/20120130131044_create_events.rb	/^class CreateEvents < ActiveRecord::Migration$/;"	c
+CreateFriends	db/migrate/20120131163855_create_friends.rb	/^class CreateFriends < ActiveRecord::Migration$/;"	c
+CreateQuestions	db/migrate/20120201193648_create_questions.rb	/^class CreateQuestions < ActiveRecord::Migration$/;"	c
+CreateRakeLogs	db/migrate/20120202012932_create_rake_logs.rb	/^class CreateRakeLogs < ActiveRecord::Migration$/;"	c
+CreateVotes	db/migrate/20120131195208_create_votes.rb	/^class CreateVotes < ActiveRecord::Migration$/;"	c
+DeviseCreateUsers	db/migrate/20120130160836_devise_create_users.rb	/^class DeviseCreateUsers < ActiveRecord::Migration$/;"	c
+Event	app/models/event.rb	/^class Event$/;"	c
+EventsController	app/controllers/events_controller.rb	/^class EventsController < ApplicationController$/;"	c
+EventsHelper	app/helpers/events_helper.rb	/^module EventsHelper$/;"	m
+Friend	app/models/friend.rb	/^class Friend$/;"	c
+ImageUploader	app/uploaders/image_uploader.rb	/^class ImageUploader < CarrierWave::Uploader::Base$/;"	c
+Konvrge	config/application.rb	/^module Konvrge$/;"	m
+OmniauthCallbacksController	app/controllers/omniauth_callbacks_controller.rb	/^class OmniauthCallbacksController < Devise::OmniauthCallbacksController$/;"	c
+Photo	app/models/photo.rb	/^class Photo$/;"	c
+PhotoHelper	app/helpers/photo_helper.rb	/^module PhotoHelper$/;"	m
+PhotosController	app/controllers/photos_controller.rb	/^class PhotosController < ApplicationController$/;"	c
+Question	app/models/question.rb	/^class Question$/;"	c
+QuestionsController	app/controllers/questions_controller.rb	/^class QuestionsController < ApplicationController$/;"	c
+QuestionsHelper	app/helpers/questions_helper.rb	/^module QuestionsHelper$/;"	m
+RakeLog	app/models/rake_log.rb	/^class RakeLog$/;"	c
+RemoveScoreColumnsFromEvents	db/migrate/20120201205023_remove_score_columns_from_events.rb	/^class RemoveScoreColumnsFromEvents < ActiveRecord::Migration$/;"	c
+ServeGridfsImage	lib/serve_gridfs_image.rb	/^class ServeGridfsImage$/;"	c
+SessionsHelper	app/helpers/sessions_helper.rb	/^module SessionsHelper$/;"	m
+User	app/models/user.rb	/^class User$/;"	c
+UserMailer	app/mailers/user_mailer.rb	/^class UserMailer < ActionMailer::Base$/;"	c
+UsersController	app/controllers/users_controller.rb	/^class UsersController < ApplicationController$/;"	c
+UsersHelper	app/helpers/users_helper.rb	/^module UsersHelper$/;"	m
+Vote	tmp/test.rb	/^class Vote$/;"	c
+Voteable	lib/voteable.rb	/^module Voteable$/;"	m
+c	app/assets/javascripts/jquery.simplemodal.js	/^c);g.setExpression("left",e)}}})},focus:function(a){var b=this;a=a&&d.inArray(a,["first","last"])!==-1?a:"first";var c=d(":input:enabled:visible:"+a,b.d.wrap);setTimeout(function(){c.length>0?c.focus():b.d.wrap.focus()},10)},getDimensions:function(){var a=d(window);return[d.browser.opera&&d.browser.version>"9.5"&&d.fn.jquery<"1.3"||d.browser.opera&&d.browser.version<"9.5"&&d.fn.jquery>"1.2.6"?a[0].innerHeight:a.height(),a.width()]},getVal:function(a,b){return a?typeof a==="number"?a:a==="auto"?0:$/;"	v
+call	lib/serve_gridfs_image.rb	/^  def call(env)$/;"	f	class:ServeGridfsImage
+category_link	app/helpers/events_helper.rb	/^  def category_link(sort)$/;"	f	class:EventsHelper
+category_status	app/helpers/application_helper.rb	/^  def category_status(category)$/;"	f	class:ApplicationHelper
+change	db/migrate/20120130131044_create_events.rb	/^  def change$/;"	f	class:CreateEvents
+change	db/migrate/20120130160836_devise_create_users.rb	/^  def change$/;"	f	class:DeviseCreateUsers
+change	db/migrate/20120130200553_add_token_to_user.rb	/^  def change$/;"	f	class:AddTokenToUser
+change	db/migrate/20120130204923_add_id_name_username_to_user.rb	/^  def change$/;"	f	class:AddIdNameUsernameToUser
+change	db/migrate/20120131041432_add_score_to_events.rb	/^  def change$/;"	f	class:AddScoreToEvents
+change	db/migrate/20120131163855_create_friends.rb	/^  def change$/;"	f	class:CreateFriends
+change	db/migrate/20120131195208_create_votes.rb	/^  def change$/;"	f	class:CreateVotes
+change	db/migrate/20120131212548_add_counts_to_events.rb	/^  def change$/;"	f	class:AddCountsToEvents
+change	db/migrate/20120201193648_create_questions.rb	/^  def change$/;"	f	class:CreateQuestions
+change	db/migrate/20120201201141_add_event_id_to_questions.rb	/^  def change$/;"	f	class:AddEventIdToQuestions
+change	db/migrate/20120201203110_add_name_to_events.rb	/^  def change$/;"	f	class:AddNameToEvents
+change	db/migrate/20120201205023_remove_score_columns_from_events.rb	/^  def change$/;"	f	class:RemoveScoreColumnsFromEvents
+change	db/migrate/20120201215209_create_answers.rb	/^  def change$/;"	f	class:CreateAnswers
+change	db/migrate/20120201224610_add_queston_id_to_answers.rb	/^  def change$/;"	f	class:AddQuestonIdToAnswers
+change	db/migrate/20120202002802_add_name_and_id_to_answers.rb	/^  def change$/;"	f	class:AddNameAndIdToAnswers
+change	db/migrate/20120202012932_create_rake_logs.rb	/^  def change$/;"	f	class:CreateRakeLogs
+change	db/migrate/20120202021919_add_vote_count_to_events.rb	/^  def change$/;"	f	class:AddVoteCountToEvents
+change	db/migrate/20120202162137_add_voteable_to_question.rb	/^  def change$/;"	f	class:AddVoteableToQuestion
+change	db/migrate/20120202162352_add_question_to_votes.rb	/^  def change$/;"	f	class:AddQuestionToVotes
+change	db/migrate/20120203003900_add_answers_to_votes.rb	/^  def change$/;"	f	class:AddAnswersToVotes
+change	db/migrate/20120203192335_add_vote_counts_to_answers.rb	/^  def change$/;"	f	class:AddVoteCountsToAnswers
+check_fb	spec/spec_helper.rb	/^def check_fb$/;"	f
+create	app/controllers/answers_controller.rb	/^  def create$/;"	f	class:AnswersController
+create	app/controllers/events_controller.rb	/^  def create$/;"	f	class:EventsController
+create	app/controllers/photos_controller.rb	/^  def create$/;"	f	class:PhotosController
+create	app/controllers/questions_controller.rb	/^  def create$/;"	f	class:QuestionsController
+current_vote	app/helpers/events_helper.rb	/^  def current_vote(obj)$/;"	f	class:EventsHelper
+current_vote	lib/voteable.rb	/^  def current_vote(user)$/;"	f	class:Voteable
+d.fn.modal	app/assets/javascripts/jquery.simplemodal.js	/^b)};d.fn.modal=function(a){return d.modal.impl.init(this,a)};d.modal.defaults={appendTo:"body",focus:true,opacity:50,overlayId:"simplemodal-overlay",overlayCss:{},containerId:"simplemodal-container",containerCss:{},dataId:"simplemodal-data",dataCss:{},minHeight:null,minWidth:null,maxHeight:null,maxWidth:null,autoResize:false,autoPosition:true,zIndex:1E3,close:true,closeHTML:'<a class="modalCloseImg" title="Close"><\/a>',closeClass:"simplemodal-close",escClose:true,overlayClose:false,position:null,$/;"	f
+d.modal	app/assets/javascripts/jquery.simplemodal.js	/^(function(d){var k=d.browser.msie&&parseInt(d.browser.version)===6&&typeof window.XMLHttpRequest!=="object",m=d.browser.msie&&parseInt(d.browser.version)===7,l=null,f=[];d.modal=function(a,b){return d.modal.impl.init(a,b)};d.modal.close=function(){d.modal.impl.close()};d.modal.focus=function(a){d.modal.impl.focus(a)};d.modal.setContainerDimensions=function(){d.modal.impl.setContainerDimensions()};d.modal.setPosition=function(){d.modal.impl.setPosition()};d.modal.update=function(a,b){d.modal.impl.update(a,$/;"	f
+d.modal.close	app/assets/javascripts/jquery.simplemodal.js	/^(function(d){var k=d.browser.msie&&parseInt(d.browser.version)===6&&typeof window.XMLHttpRequest!=="object",m=d.browser.msie&&parseInt(d.browser.version)===7,l=null,f=[];d.modal=function(a,b){return d.modal.impl.init(a,b)};d.modal.close=function(){d.modal.impl.close()};d.modal.focus=function(a){d.modal.impl.focus(a)};d.modal.setContainerDimensions=function(){d.modal.impl.setContainerDimensions()};d.modal.setPosition=function(){d.modal.impl.setPosition()};d.modal.update=function(a,b){d.modal.impl.update(a,$/;"	f
+d.modal.defaults.appendTo	app/assets/javascripts/jquery.simplemodal.js	/^b)};d.fn.modal=function(a){return d.modal.impl.init(this,a)};d.modal.defaults={appendTo:"body",focus:true,opacity:50,overlayId:"simplemodal-overlay",overlayCss:{},containerId:"simplemodal-container",containerCss:{},dataId:"simplemodal-data",dataCss:{},minHeight:null,minWidth:null,maxHeight:null,maxWidth:null,autoResize:false,autoPosition:true,zIndex:1E3,close:true,closeHTML:'<a class="modalCloseImg" title="Close"><\/a>',closeClass:"simplemodal-close",escClose:true,overlayClose:false,position:null,$/;"	p
+d.modal.defaults.focus	app/assets/javascripts/jquery.simplemodal.js	/^b)};d.fn.modal=function(a){return d.modal.impl.init(this,a)};d.modal.defaults={appendTo:"body",focus:true,opacity:50,overlayId:"simplemodal-overlay",overlayCss:{},containerId:"simplemodal-container",containerCss:{},dataId:"simplemodal-data",dataCss:{},minHeight:null,minWidth:null,maxHeight:null,maxWidth:null,autoResize:false,autoPosition:true,zIndex:1E3,close:true,closeHTML:'<a class="modalCloseImg" title="Close"><\/a>',closeClass:"simplemodal-close",escClose:true,overlayClose:false,position:null,$/;"	p
+d.modal.defaults.opacity	app/assets/javascripts/jquery.simplemodal.js	/^b)};d.fn.modal=function(a){return d.modal.impl.init(this,a)};d.modal.defaults={appendTo:"body",focus:true,opacity:50,overlayId:"simplemodal-overlay",overlayCss:{},containerId:"simplemodal-container",containerCss:{},dataId:"simplemodal-data",dataCss:{},minHeight:null,minWidth:null,maxHeight:null,maxWidth:null,autoResize:false,autoPosition:true,zIndex:1E3,close:true,closeHTML:'<a class="modalCloseImg" title="Close"><\/a>',closeClass:"simplemodal-close",escClose:true,overlayClose:false,position:null,$/;"	p
+d.modal.defaults.overlayCss	app/assets/javascripts/jquery.simplemodal.js	/^b)};d.fn.modal=function(a){return d.modal.impl.init(this,a)};d.modal.defaults={appendTo:"body",focus:true,opacity:50,overlayId:"simplemodal-overlay",overlayCss:{},containerId:"simplemodal-container",containerCss:{},dataId:"simplemodal-data",dataCss:{},minHeight:null,minWidth:null,maxHeight:null,maxWidth:null,autoResize:false,autoPosition:true,zIndex:1E3,close:true,closeHTML:'<a class="modalCloseImg" title="Close"><\/a>',closeClass:"simplemodal-close",escClose:true,overlayClose:false,position:null,$/;"	p
+d.modal.defaults.overlayId	app/assets/javascripts/jquery.simplemodal.js	/^b)};d.fn.modal=function(a){return d.modal.impl.init(this,a)};d.modal.defaults={appendTo:"body",focus:true,opacity:50,overlayId:"simplemodal-overlay",overlayCss:{},containerId:"simplemodal-container",containerCss:{},dataId:"simplemodal-data",dataCss:{},minHeight:null,minWidth:null,maxHeight:null,maxWidth:null,autoResize:false,autoPosition:true,zIndex:1E3,close:true,closeHTML:'<a class="modalCloseImg" title="Close"><\/a>',closeClass:"simplemodal-close",escClose:true,overlayClose:false,position:null,$/;"	p
+d.modal.focus	app/assets/javascripts/jquery.simplemodal.js	/^(function(d){var k=d.browser.msie&&parseInt(d.browser.version)===6&&typeof window.XMLHttpRequest!=="object",m=d.browser.msie&&parseInt(d.browser.version)===7,l=null,f=[];d.modal=function(a,b){return d.modal.impl.init(a,b)};d.modal.close=function(){d.modal.impl.close()};d.modal.focus=function(a){d.modal.impl.focus(a)};d.modal.setContainerDimensions=function(){d.modal.impl.setContainerDimensions()};d.modal.setPosition=function(){d.modal.impl.setPosition()};d.modal.update=function(a,b){d.modal.impl.update(a,$/;"	f
+d.modal.impl.d	app/assets/javascripts/jquery.simplemodal.js	/^persist:false,modal:true,onOpen:null,onShow:null,onClose:null};d.modal.impl={d:{},init:function(a,b){var c=this;if(c.d.data)return false;l=d.browser.msie&&!d.boxModel;c.o=d.extend({},d.modal.defaults,b);c.zIndex=c.o.zIndex;c.occb=false;if(typeof a==="object"){a=a instanceof jQuery?a:d(a);c.d.placeholder=false;if(a.parent().parent().size()>0){a.before(d("<span><\/span>").attr("id","simplemodal-placeholder").css({display:"none"}));c.d.placeholder=true;c.display=a.css("display");if(!c.o.persist)c.d.orig=$/;"	p
+d.modal.setContainerDimensions	app/assets/javascripts/jquery.simplemodal.js	/^(function(d){var k=d.browser.msie&&parseInt(d.browser.version)===6&&typeof window.XMLHttpRequest!=="object",m=d.browser.msie&&parseInt(d.browser.version)===7,l=null,f=[];d.modal=function(a,b){return d.modal.impl.init(a,b)};d.modal.close=function(){d.modal.impl.close()};d.modal.focus=function(a){d.modal.impl.focus(a)};d.modal.setContainerDimensions=function(){d.modal.impl.setContainerDimensions()};d.modal.setPosition=function(){d.modal.impl.setPosition()};d.modal.update=function(a,b){d.modal.impl.update(a,$/;"	f
+d.modal.setPosition	app/assets/javascripts/jquery.simplemodal.js	/^(function(d){var k=d.browser.msie&&parseInt(d.browser.version)===6&&typeof window.XMLHttpRequest!=="object",m=d.browser.msie&&parseInt(d.browser.version)===7,l=null,f=[];d.modal=function(a,b){return d.modal.impl.init(a,b)};d.modal.close=function(){d.modal.impl.close()};d.modal.focus=function(a){d.modal.impl.focus(a)};d.modal.setContainerDimensions=function(){d.modal.impl.setContainerDimensions()};d.modal.setPosition=function(){d.modal.impl.setPosition()};d.modal.update=function(a,b){d.modal.impl.update(a,$/;"	f
+d.modal.update	app/assets/javascripts/jquery.simplemodal.js	/^(function(d){var k=d.browser.msie&&parseInt(d.browser.version)===6&&typeof window.XMLHttpRequest!=="object",m=d.browser.msie&&parseInt(d.browser.version)===7,l=null,f=[];d.modal=function(a,b){return d.modal.impl.init(a,b)};d.modal.close=function(){d.modal.impl.close()};d.modal.focus=function(a){d.modal.impl.focus(a)};d.modal.setContainerDimensions=function(){d.modal.impl.setContainerDimensions()};d.modal.setPosition=function(){d.modal.impl.setPosition()};d.modal.update=function(a,b){d.modal.impl.update(a,$/;"	f
+delete	app/controllers/users_controller.rb	/^  def delete$/;"	f	class:UsersController
+delete_gfs!	app/models/photo.rb	/^  def delete_gfs!$/;"	f	class:Photo
+delete_gfs_photos!	app/models/event.rb	/^  def delete_gfs_photos!$/;"	f	class:Event
+down	db/migrate/20120203044104_change_column_type_votes_fb_id.rb	/^  def down$/;"	f	class:ChangeColumnTypeVotesFbId
+downvote	lib/voteable.rb	/^  def downvote(user)$/;"	f	class:Voteable
+downvote_toggle	lib/voteable.rb	/^  def downvote_toggle(user)$/;"	f	class:Voteable
+e	app/assets/javascripts/jquery.simplemodal.js	/^a.d.container.height():a.getVal(b?a.d.container[0].currentStyle.height:a.d.container.css("height"),"h");b=a.d.origWidth?a.d.origWidth:d.browser.opera?a.d.container.width():a.getVal(b?a.d.container[0].currentStyle.width:a.d.container.css("width"),"w");var h=a.d.data.outerHeight(true),g=a.d.data.outerWidth(true);a.d.origHeight=a.d.origHeight||c;a.d.origWidth=a.d.origWidth||b;var e=a.o.maxHeight?a.getVal(a.o.maxHeight,"h"):null,i=a.o.maxWidth?a.getVal(a.o.maxWidth,"w"):null;e=e&&e<f[0]?e:f[0];i=i&&i<$/;"	v
+edit	app/controllers/users_controller.rb	/^  def edit$/;"	f	class:UsersController
+events_friended_paginated	app/helpers/events_helper.rb	/^  def events_friended_paginated$/;"	f	class:EventsHelper
+events_sort	app/controllers/events_controller.rb	/^  def events_sort(events, order)$/;"	f	class:EventsController
+extension_white_list	app/uploaders/image_uploader.rb	/^  def extension_white_list$/;"	f	class:ImageUploader
+facebook	app/controllers/omniauth_callbacks_controller.rb	/^  def facebook$/;"	f	class:OmniauthCallbacksController
+facebook_friends	spec/spec_helper.rb	/^def facebook_friends$/;"	f
+failure	app/controllers/omniauth_callbacks_controller.rb	/^  def failure$/;"	f	class:OmniauthCallbacksController
+fb_friends	app/models/user.rb	/^  def fb_friends$/;"	f	class:User
+fb_postable?	app/controllers/application_controller.rb	/^  def fb_postable?(token)$/;"	f	class:ApplicationController
+find_for_facebook_oauth	app/models/user.rb	/^  def self.find_for_facebook_oauth(access_token, signed_in_resource=nil)$/;"	F	class:User
+fn.dropdown	app/assets/javascripts/bootstrap-dropdown.js	/^\/* ============================================================$/;"	f
+friends_category_visible?	app/helpers/events_helper.rb	/^  def friends_category_visible?$/;"	f	class:EventsHelper
+friends_data	app/models/user.rb	/^  def friends_data(events, ids)$/;"	f	class:User
+friends_ids	app/models/user.rb	/^  def friends_ids$/;"	f	class:User
+h	app/assets/javascripts/jquery.simplemodal.js	/^a.d.container.height():a.getVal(b?a.d.container[0].currentStyle.height:a.d.container.css("height"),"h");b=a.d.origWidth?a.d.origWidth:d.browser.opera?a.d.container.width():a.getVal(b?a.d.container[0].currentStyle.width:a.d.container.css("width"),"w");var h=a.d.data.outerHeight(true),g=a.d.data.outerWidth(true);a.d.origHeight=a.d.origHeight||c;a.d.origWidth=a.d.origWidth||b;var e=a.o.maxHeight?a.getVal(a.o.maxHeight,"h"):null,i=a.o.maxWidth?a.getVal(a.o.maxWidth,"w"):null;e=e&&e<f[0]?e:f[0];i=i&&i<$/;"	v
+handle_post	app/controllers/omniauth_callbacks_controller.rb	/^  def handle_post$/;"	f	class:OmniauthCallbacksController
+index	app/controllers/events_controller.rb	/^  def index$/;"	f	class:EventsController
+index	app/controllers/photos_controller.rb	/^  def index$/;"	f	class:PhotosController
+initialize	lib/serve_gridfs_image.rb	/^  def initialize(app)$/;"	f	class:ServeGridfsImage
+j	app/assets/javascripts/jquery.simplemodal.js	/^f[1]?i:f[1];var j=a.o.minHeight?a.getVal(a.o.minHeight,"h"):"auto";c=c?a.o.autoResize&&c>e?e:c<j?j:c:h?h>e?e:a.o.minHeight&&j!=="auto"&&h<j?j:h:j;e=a.o.minWidth?a.getVal(a.o.minWidth,"w"):"auto";b=b?a.o.autoResize&&b>i?i:b<e?e:b:g?g>i?i:a.o.minWidth&&e!=="auto"&&g<e?e:g:e;a.d.container.css({height:c,width:b});a.d.wrap.css({overflow:h>c||g>b?"auto":"visible"});a.o.autoPosition&&a.setPosition()},setPosition:function(){var a=this,b,c;b=f[0]\/2-a.d.container.outerHeight(true)\/2;c=f[1]\/2-a.d.container.outerWidth(true)\/$/;"	v
+jQuery.fn.autolink	app/assets/javascripts/application.js	/^jQuery.fn.autolink = function () {$/;"	f
+notify_answer_reply	app/mailers/user_mailer.rb	/^  def notify_answer_reply(user, link)$/;"	f	class:UserMailer
+order_translate	app/controllers/events_controller.rb	/^  def order_translate(order)$/;"	f	class:EventsController
+order_translate	app/controllers/photos_controller.rb	/^  def order_translate(order)$/;"	f	class:PhotosController
+paginator	app/helpers/events_helper.rb	/^  def paginator$/;"	f	class:EventsHelper
+post_to_facebook	app/controllers/application_controller.rb	/^  def post_to_facebook(item_path, redirect_to_link, options)$/;"	f	class:ApplicationController
+process_friends_events	app/models/user.rb	/^  def process_friends_events(sort=nil, events=nil)$/;"	f	class:User
+process_request	lib/serve_gridfs_image.rb	/^  def process_request(env, key)$/;"	f	class:ServeGridfsImage
+process_votes	app/models/event.rb	/^  def self.process_votes$/;"	F	class:Event
+score_algorithm	app/models/event.rb	/^  def self.score_algorithm(votes, created_at)$/;"	F	class:Event
+show	app/controllers/events_controller.rb	/^  def show$/;"	f	class:EventsController
+sort_status	app/helpers/application_helper.rb	/^  def sort_status(sort)$/;"	f	class:ApplicationHelper
+store_dir	app/uploaders/image_uploader.rb	/^  def store_dir$/;"	f	class:ImageUploader
+store_location	app/helpers/sessions_helper.rb	/^  def store_location$/;"	f	class:SessionsHelper
+top_photo	app/helpers/events_helper.rb	/^  def top_photo(event)$/;"	f	class:EventsHelper
+uniq_answer_id	app/helpers/events_helper.rb	/^  def uniq_answer_id$/;"	f	class:EventsHelper
+up	db/migrate/20120203044104_change_column_type_votes_fb_id.rb	/^  def up$/;"	f	class:ChangeColumnTypeVotesFbId
+update	app/controllers/users_controller.rb	/^  def update$/;"	f	class:UsersController
+update_fb_friends	app/models/user.rb	/^  def update_fb_friends$/;"	f	class:User
+update_info	app/models/user.rb	/^  def update_info(auth)$/;"	f	class:User
+upvote	lib/voteable.rb	/^  def upvote(user)$/;"	f	class:Voteable
+upvote_toggle	lib/voteable.rb	/^  def upvote_toggle(user)$/;"	f	class:Voteable
+vote	app/controllers/events_controller.rb	/^  def vote$/;"	f	class:EventsController
+vote_adjust	lib/voteable.rb	/^  def vote_adjust(up, down, count)$/;"	f	class:Voteable
+vote_handler	lib/voteable.rb	/^  def vote_handler(current, vote, user, toggle = 0)$/;"	f	class:Voteable
+wall_last	app/helpers/photo_helper.rb	/^  def wall_last(counter)$/;"	f	class:PhotoHelper
+welcome_email	app/mailers/user_mailer.rb	/^  def welcome_email(user)$/;"	f	class:UserMailer

@@ -1,0 +1,14 @@
+.question-answer
+  .answer-head
+    -if user_signed_in?
+      .vote{:class => 'vote', "data-id" => answer.id, "data-function" => "voteable", "data-current-vote" => "#{answer.current_vote(current_user)}", "data-model" => "answer", "data-question-id" => answer.question.id }
+    %p
+      = answer.user_name
+      \-
+      = time_ago_in_words(answer.created_at)
+      ago
+      %span{"data-id" => answer.id, "data-function" => "vote_count", "data-model" => "answer"}
+        = answer.vote_count
+      points
+  .answer-content
+    = answer.content

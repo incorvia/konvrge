@@ -1,0 +1,34 @@
+.menu-button{:class => category_status(nil)}
+  = image_tag 'bucket.png'
+  %p
+    = link_to "Harvard", root_path
+
+- if friends_category_visible?
+  .menu-button{:class => category_status('friends')}
+    = image_tag 'face.png'
+    %p
+      = link_to 'Friends', category_path(:category => 'friends', :sort => 'popular')
+-#.menu-button{:class => category_status('sports')}
+  -#= image_tag 'medal.png'
+  -#%p
+    -#= link_to 'Sports', category_path(:category => 'sports', :sort => 'popular')
+-#.menu-button{:class => category_status('politics')}
+  -#= image_tag 'scales.png'
+  -#%p
+    -#= link_to 'Politics', category_path(:category => 'politics', :sort => 'popular')
+-#.menu-button{:class => category_status('technology')}
+  -#= image_tag 'computer.png'
+  -#%p
+    -#= link_to 'Technology', category_path(:category => 'technology', :sort => 'popular')
+-#.menu-button{:class => category_status('world')}
+  -#= image_tag 'world.png'
+  -#%p
+    -#= link_to 'World', category_path(:category => 'world', :sort => 'popular')
+-#.menu-button{:class => category_status('local')}
+  -#= image_tag 'local.png'
+  -#%p
+    -#= link_to 'Local', category_path(:category => 'local', :sort => 'popular')
+-#.menu-button{:class => category_status('personal')}
+  -#= image_tag 'personal.png'
+  -#%p
+    -#= link_to 'Personal', category_path(:category => 'personal', :sort => 'popular')

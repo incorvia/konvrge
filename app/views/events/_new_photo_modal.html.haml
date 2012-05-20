@@ -1,0 +1,15 @@
+#rollout-modal-content{"data-modal" => 'new_photo'}
+  #rollout-modal-title Submit a Photo
+  .close
+    %a.simplemodal-close{:href => '#'} x
+  #rollout-modal-data
+    %h2 Submit a photo
+    %p 
+      Know a photo that represents this news event? Enter the photos web address and we'll make sure others see it. Image address must end in 'gif', 'png', or 'jpg', or 'jpeg'
+    = form_for @new_photo do |f|
+      .form_block
+        .form_row
+          = f.label :remote_image_url, "Image Web Address:"
+          = f.text_field :remote_image_url
+        .form_row
+          = button_tag "Submit", :class => 'btn primary pull-right'

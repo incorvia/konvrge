@@ -1,0 +1,19 @@
+development:
+  host: localhost
+  database: konvrge_development
+
+test:
+  host: localhost
+  database: konvrge_test
+
+production:
+  host: localhost
+  port: 27017
+  database: konvrge
+  persist_in_safe_mode: true
+
+  # slaves:
+  #   - host: slave1.local
+  #     port: 27018
+  #   - host: slave2.local
+  #     port: 27019

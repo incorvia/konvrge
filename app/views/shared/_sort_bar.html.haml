@@ -1,0 +1,9 @@
+.menu-button{:class => sort_status('popular')}
+  = image_tag 'popular.png'
+  %p
+    = link_to "Popular", category_link('popular')
+.menu-button{:class => sort_status('new')}
+  = image_tag 'new.png'
+  %p
+    = link_to (mv_begin_section('New Link') + "New" + mv_end_section), category_link('new'), :onclick => "doGoal(this);return false;"
+.menu-divider

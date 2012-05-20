@@ -1,0 +1,310 @@
+// Place all the styles related to the Events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*------- Index -------*/
+.pagination {
+  float: left;
+}
+
+.pagination a:hover, .pagination .active a {
+  background-color: #245FAF;
+  color: #fff;
+}
+
+.main-block {
+  width: 100%;
+  min-height: 400px;
+}
+
+.news-item {
+  float: left;
+  width: 600px;
+  margin-bottom: 30px;
+}
+
+.news-item h4, .news-item h4 a {
+  float: left;
+  margin: 0 0 10px 0;
+  height: 16px;
+  width: 400px;
+}
+
+.news-item h4 a {
+  color: #245FAF;
+  line-height: 16px;
+}
+
+.news-content {
+  margin-left: 20px;
+  float: left;
+  width: 400px;
+}
+
+.news-meta p {
+  float: left;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.news-meta img {
+  float: left;
+  margin-right: 5px;
+}
+
+.news-relations {
+  height: 47px;
+  width: 300px;
+  float: left;
+}
+
+.news-relations .all, .news-relations .friends {
+  width: auto;
+  height: 47px;
+  float: left;
+  background-color: #ddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.news-relations .all img {
+  margin-left: 10px;
+  margin-top: 7px;
+  float: left;
+  margin-right: 2px;
+}
+
+.news-relations .friends img {
+  margin-left: 10px;
+  margin-top: 10px;
+  float: left;
+  margin-right: 5px;
+}
+
+.news-relations .all p,
+.news-relations .friends p{
+  float: left;
+  font-size: 24px;
+  margin-top: 14px;
+  padding-right: 11px;
+}
+
+.news-relations .mini-pics {
+  width: 100px;
+  height: 47px;
+  float: left;
+}
+
+.news-relations .mini-pics img {
+  width: 22px;
+  height: 22px;
+  float: left;
+  margin: 0 3px 3px 0;
+}
+
+/*------- Show -------*/
+.event-header {
+  width: 840px;
+  background-color: #ededed;
+  float: left;
+}
+
+.event-header .top h2 {
+  color: #000;
+  padding: 3px 0 0 0;
+  margin: 8px 0 8px 30px;
+  float: left;
+  line-height: 30px;
+  width: 700px;
+}
+
+.event-header .top {
+  width: 100%;
+  float: left;
+}
+
+.event-header img.add {
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.event-header img.last {
+  margin-right: 30px;
+}
+
+.event-header .meta {
+  width: 840px;
+  float: left;
+  margin-left: 20px;
+}
+
+.event-header .meta p {
+  float: left;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.meta img {
+  float: left;
+  margin-top: 1px;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+.top-photos {
+  float: right;
+}
+
+.top-photos .round {
+  margin-bottom: 10px;
+}
+
+.q-a {
+  width: 600px;
+  margin: 30px 0 50px 30px;
+  float: left;
+}
+
+
+#new_question {
+  float: left;
+}
+
+#question_title {
+  width: 473px;
+  height: 26px;
+  font-size: 16px;
+  margin-left: 12px;
+  float: left;
+}
+
+.question-ask {
+  margin-bottom: 20px;
+  float: left;
+  height: 40px;
+}
+
+#ask_button {
+  height: 35px;
+  width: 60px;
+  float: left;
+  margin-left: 10px;
+}
+
+.questions-container {
+  width: 600px;
+  float: left;
+  min-height: 50px;
+
+}
+
+.question-head {
+  width: 600px;
+  float: left;
+}
+
+.question-head .vote {
+  width: 20px;
+  height: 18px;
+  margin-right: 10px;
+  float: left;
+  background-image: url('star_off.png');
+}
+
+.question-head .on {
+  background-image: url('star_on.png');
+}
+
+.question-head h5 {
+  line-height: 20px;
+  color: #333;
+  width: 570px;
+  float: right;
+}
+
+.question-head p {
+ border-bottom: 1px solid #ccc;
+ padding-bottom: 10px;
+ color: #777;
+ float: right;
+ width: 570px;
+ margin-bottom: 12px;
+}
+
+.question-answer {
+  width: 508px;
+  float: right;
+  margin-bottom: 10px;
+}
+
+.answers-container {
+  float: right;
+  width: 600px;
+  clear: both;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.vote img {
+  float: left;
+}
+
+.new_answer {
+  float: right;
+  margin-bottom: 0px;
+}
+
+.answer-box {
+  clear: both;
+  width: 600px;
+  float: right;
+}
+
+.answer-input {
+  float: right;
+  width: 560px;
+  resize: none;
+  padding-top: 10px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.answer-button {
+  width: 600px;
+  height: 28px;
+  float: right;
+}
+
+.answer-head {
+  float: right;
+  width: 508px;
+}
+
+.answer-head .vote {
+  width: 16px;
+  height: 14px;
+  margin-right: 0px;
+  float: left;
+  background-image: url('star_small_off.png');
+}
+
+.answer-head .on {
+  background-image: url('star_small_on.png');
+}
+
+.answer-head p {
+  color: #777;
+  float: right;
+  width: 485px;
+  margin-left: 0px;
+  margin-bottom: 2px;
+}
+
+.answer-content {
+  float: right;
+  width: 485px;
+}
+

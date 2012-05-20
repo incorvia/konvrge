@@ -1,0 +1,29 @@
+- new_answer = question.answers.new;
+
+.questions-container
+  .question-head
+    -if user_signed_in?
+      .vote{:class => 'vote', "data-id" => question.id, "data-function" => "voteable", "data-current-vote" => "#{question.current_vote(current_user)}", "data-model" => "question" }
+    %h5
+      = question.title
+    %p
+      %span{"data-id" => question.id, "data-function" => "vote_count", "data-model" => "question"}
+        = question.vote_count
+      points
+      \- asked by 
+      = question.user_name
+      \-
+      = time_ago_in_words(question.created_at)
+      - if user_signed_in?
+        \-
+        = link_to "answer this question", "", "data-id" =>  "#{new_answer.id}", "data-function" => "toggle_input"
+  - if user_signed_in?
+    .answer-box{"data-id" =>  "#{new_answer.id}", "data-function" => "input",  :style => 'display:none'}
+      = form_for new_answer, :method => 'post' do |f|
+        = f.text_area :content, :placeholder => 'Provide An Answer', :class => 'answer-input'
+        = f.hidden_field :question_id, :value => question.id
+        = f.hidden_field :event_id, :value => @event.id
+        .answer-button
+          = button_tag 'Answer', :class => 'btn primary pull-right'
+  .answers-container
+    = render :partial => 'answers/answer', :collection => (question.answers - new_answer.to_a)

@@ -1,0 +1,21 @@
+#rollout-modal-content{"data-modal" => 'new_event'}
+  #rollout-modal-title Report a News Event
+  .close
+    %a.simplemodal-close{:href => '#'} x
+  #rollout-modal-data
+    %h2 Did an event just happen?
+    %p 
+      Events are the basic atom of Konvrge.  To discuss a current news event, enter what happened and where and we'll take care of the rest.
+    = form_for @new_event do |f|
+      .form_block
+        .form_row
+          = f.label :title, "What happened?"
+          = f.text_field :title, :maxlength => 80;
+        .form_row
+          = f.label :location, "Where?"
+          = f.text_field :location, :maxlength => 25;
+        .form_row
+          = f.label :category
+          = f.select :category, Event::CATEGORIES
+        .form_row
+          = button_tag "Submit", :class => 'btn primary pull-right'

@@ -1,0 +1,8 @@
+.menu-button{:class => sort_status('popular')}
+  = image_tag 'popular.png'
+  %p
+    = link_to "Popular", event_photos_path(@event)
+.menu-button{:class => sort_status('new')}
+  = image_tag 'new.png'
+  %p
+    = link_to "New", event_new_photos_path(@event)

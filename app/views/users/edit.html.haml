@@ -1,0 +1,19 @@
+%section.container
+  .content
+    .row
+      = render 'shared/menu_bar'
+      .span8
+        .user_edit
+          %h3 Facebook
+          = form_for @user do |f|
+            = f.label :post_permission, "Auto-Post to Facebook:"
+            .checkbox
+              = f.check_box :post_permission, :checked_value => current_user.post_permission
+        .update
+          = button_tag "Update", :form => "edit_user_" + current_user.id.to_s, :class => 'btn primary'
+          
+          
+      .span4
+        .info-graphic
+          %h3 Account
+          %p This is where you can adjust your account settings. 

@@ -1,0 +1,46 @@
+// Place all the styles related to the Photo controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.brick_wall {
+  float: left;
+}
+
+.brick.photo {
+  float: left;
+  margin: 0 21px 10px 0;
+  width: 186px;
+}
+
+.brick.photo.last {
+  float: left;
+  margin-right: 0px;  
+}
+
+.brick.photo a {
+  float: left;
+}
+
+.brick.photo .round {
+  margin-right: 0px !important;
+  float: left;
+}
+
+.brick.photo .photo_info {
+  width: 100%;
+  height: 20px;
+  float: left;
+  margin-top: 5px;
+}
+
+.photo_info .vote {
+  width: 16px;
+  height: 14px;
+  margin-right: 2px;
+  float: left;
+  background-image: url('star_small_off.png');
+}
+
+.photo_info .on {
+  background-image: url('star_small_on.png');
+}

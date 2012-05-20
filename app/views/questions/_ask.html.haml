@@ -1,0 +1,7 @@
+.question-ask
+  .round{:style => "background-image: url(\"https://graph.facebook.com/#{current_user.fb_id}/picture?type=square\"); height: 35px; width: 35px;"}
+    = image_tag "https://graph.facebook.com/#{current_user.fb_id}/picture?type=square"
+  = form_for @new_question do |f|
+    = f.text_field :title, :class => 'large', :placeholder => 'What do you want to know?'
+    = f.hidden_field :event_id, :value => params[:id]
+    = f.submit 'Ask', :id => 'ask_button', :class => 'btn primary'

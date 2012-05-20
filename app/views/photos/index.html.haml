@@ -1,0 +1,14 @@
+%section.container
+  .content
+    .row
+      = render 'shared/menu_bar'
+      = render 'events/header'
+      .span8
+        .brick_wall
+          .main-block
+            = render @photos
+          = paginate @photos
+      .span4
+        .info-graphic
+          %h3 Photos
+          %p Post photos here that you believe need to be remembered with this event.  The top voted photos will represent this event on other pages.

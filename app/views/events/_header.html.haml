@@ -1,0 +1,22 @@
+.event-header
+  .top
+    %h2
+      = @event.title
+    - if user_signed_in?
+      = link_to (image_tag 'new-photo.png', :class => 'add last'), "#", :class => 'rollout', "data-modal" => 'new_photo'
+      = render 'events/new_photo_modal'
+  .meta
+    = image_tag 'meta-global.png'
+    %p 
+      = @event.vote_count
+      Influencing
+    = image_tag 'meta-local.png'
+    %p
+      = @event.location
+    = image_tag 'meta-date.png'
+    %p
+      = time_ago_in_words(@event.created_at)
+      ago
+    = image_tag 'meta-person.png'
+    %p
+      = @event.user_name

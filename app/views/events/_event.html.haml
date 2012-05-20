@@ -1,0 +1,26 @@
+.news-item
+  .round{:style => "background-image: url(#{top_photo(event)}); height: 100px; width: 150px;"}
+    = image_tag top_photo(event)
+  .news-content
+    %h4
+      %a{ :href => event_path(event) }
+        = truncate(event.title, :length => 50)
+    .news-meta
+      = image_tag 'news-location.png'
+      %p
+        = event.location
+      = image_tag 'news-date.png'
+      %p
+        = time_ago_in_words(event.created_at)
+    .news-relations
+      .all
+        = image_tag 'news-global.png'
+        %p
+          = event.vote_count
+      .friends
+        = image_tag 'news-face.png'
+        %p
+          = user_signed_in? ? event.friend_count : "-"
+      - if user_signed_in?
+        .mini-pics
+          = render :partial => 'mini', :collection => (event.friend_voters.sample(8) if !event.friend_voters.nil?)

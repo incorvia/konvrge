@@ -1,0 +1,9 @@
+.brick.photo{:class => wall_last(photo_counter)}
+  %a{:href => photo.original_url}
+    .round{:style => "background-image: url(#{photo.image.wall}); height: 124px; width: 186px;"}
+      = image_tag photo.image.wall
+  .photo_info
+    -if user_signed_in?
+      .vote{:class => 'vote', "data-id" => photo.id, "data-function" => "voteable", "data-current-vote" => "#{photo.current_vote(current_user)}", "data-model" => "photo"}
+      %span{"data-id" => photo.id, "data-function" => "vote_count", "data-model" => "photo"}
+        = photo.vote_count

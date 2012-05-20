@@ -1,0 +1,17 @@
+!!! HTML
+!!!
+%html
+  %head
+    %title Konvrge
+    = stylesheet_link_tag("http://fonts.googleapis.com/css?family=Glegoo")
+    = stylesheet_link_tag  "application"
+    = javascript_include_tag "application"
+    = favicon_link_tag 'favicon.ico'
+    = csrf_meta_tags
+    %meta{:name => "google-site-verification", :content => "Ovb6uruahku40YvGrvBBdEFS2Y6Dg0-ojZCez3USakw"}
+  = mv_head(3603504658, 'UA-29835325-2', '3603504658')
+
+%body
+  = render 'layouts/header'
+  = yield
+  = render 'layouts/footer'

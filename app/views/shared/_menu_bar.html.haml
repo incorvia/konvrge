@@ -1,0 +1,10 @@
+#menu.span3
+  - if params[:controller] == 'photos'
+    = render 'photos/back_bar'
+    = render 'photos/sort_bar'
+  - elsif params[:controller] == 'events' && params[:action] == 'show'
+    = render 'events/back_bar'
+    = render 'shared/category_bar'
+  - else  
+    = render 'shared/sort_bar'
+    = render 'shared/category_bar'

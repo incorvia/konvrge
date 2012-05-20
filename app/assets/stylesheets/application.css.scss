@@ -1,0 +1,278 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require bootstrap
+ *= require event
+ *= require rollout
+ *= require photo
+ *= require user
+ *= require_self
+*/
+
+/* -- Overrides -- */
+html, body {
+  background-color: #eee;
+}
+
+body {
+  padding-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
+}
+
+footer p {
+  text-align: center; /* center align it with the container */
+}
+
+.container {
+  width: 1000px; /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
+}
+
+/* The white background content wrapper */
+.container > .content {
+  background-color: #fff;
+  padding: 0px;
+  margin: 0px;
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+          box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  width: 1000px;
+}
+
+.content .span8,
+.content .span3,
+.content .span4,{
+  min-height: 400px;
+  float: left;
+}
+
+.content .span8 {
+  margin: 20px 0 0 30px;
+  min-height: 400px;
+  width: 600px;
+}
+
+.content .span3 {
+  margin-left: 0;
+  background-color: #666;
+  min-height: 400px;
+    -webkit-border-radius: 0 0 0px 6px;
+     -moz-border-radius: 0 0 0px 6px;
+          border-radius: 0 0 0px 6px;
+
+}
+
+.content .span4 {
+  width: 150px;
+  margin-right: 30px;
+  margin-top: 20px;
+  float: right;
+  margin-bottom: 30px;
+}
+
+.topbar {
+  height: 40px;
+}
+
+.topbar .container {
+  height: 40px;
+}
+
+.topbar .btn {
+  margin-top: 2px;
+  border: 0;
+  margin-right: 30px;
+}
+
+.topbar a {
+  color: white;
+}
+
+.topbar div > ul.secondary-nav, .nav.secondary-nav {
+  float: right;
+  margin-left: 10px;
+  margin-right: 0px;
+}
+
+.dropdown-menu {
+  min-width: 101px;
+}
+
+.dropdown-menu li a {
+  text-alignt: right !important;
+}
+
+.topbar-inner, .topbar .fill {
+  background-color: #245faf;
+  background-color: #245faf;
+  background-repeat: repeat-x;
+  height: 40px;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#245faf), to(#245faf));
+  background-image: -moz-linear-gradient(top, #245faf, #245faf);
+  background-image: -ms-linear-gradient(top, #245faf, #245faf);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #245faf), color-stop(100%, #245faf));
+  background-image: -webkit-linear-gradient(top, #245faf, #245faf);
+  background-image: -o-linear-gradient(top, #245faf, #245faf);
+  background-image: linear-gradient(top, #245faf, #245faf);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#245faf', endColorstr='#245faf', GradientType=0);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* -- Konvrge Styles -- */
+
+h1, h2, h3, h4, h5, h6 {
+  color: #245FAF;
+}
+
+label {
+  font-size: 16px;
+}
+
+#flash {
+  float: left;
+  color: white;
+  margin: 10px 0 0 20px;
+}
+
+#flash p {
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.menu-button {
+  border-bottom: 1px solid #222;
+  border-top: 1px solid #555;
+  height: 30px;
+  background: #333;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 -1px 1px black;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#404040),to(#333));
+  background-image: -webkit-linear-gradient(#404040,#333);
+  background-image: -moz-linear-gradient(#404040,#333);
+  background-image: -ms-linear-gradient(#404040,#333);
+  background-image: -o-linear-gradient(#404040,#333);
+  background-image: linear-gradient(#404040,#333);
+  border-image: initial;
+}
+
+.menu-button.active {
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#474747),to(#4d4d4d)); 
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#474747),to(#4d4d4d));
+  background-image: -webkit-linear-gradient(#474747,#4d4d4d);
+  background-image: -moz-linear-gradient(#474747,#4d4d4d);
+  background-image: -ms-linear-gradient(#474747,#4d4d4d);
+  background-image: -o-linear-gradient(#474747,#4d4d4d);
+  background-image: linear-gradient(#474747,#4d4d4d);
+  border-image: initial;
+}
+
+.menu-button.active a {
+  color: #d4d4d4;
+}
+
+.menu-button p {
+  margin: 6px;
+  font-weight: bold;
+  color: #EDEDED;
+  float: left;
+  width: 100px;
+}
+
+.menu-button a {
+  color: #EDEDED;
+}
+
+.menu-button img {
+  width: 30px;
+  float: left;
+  margin-left: 5px;
+}
+
+.menu-dropdown, .dropdown-menu {
+  top: 40px;
+}
+
+a.menu::after, .dropdown-toggle::after {
+  border-top: 4px solid #fff;
+}
+
+.menu-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #245faf;
+  border-top: 1px solid #245faf;
+  border-bottom: 1px solid #0c3e82;
+}
+
+.topbar h3 a, .topbar .brand {
+  padding: 8px 49px 12px 11px;
+  font-family: 'Glegoo', serif;
+  margin-left: 0px;
+  background-color: #245FAF;
+}
+
+.topbar h3 a:hover, .topbar .brand:hover, .topbar ul .active > a {
+  color: #FFF;
+}
+
+
+.round {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: #000 0 1px 3px;
+  -moz-box-shadow: #000 0 1px 3px;
+  box-shadow: #000 0 1px 3px;
+  width: 150px;
+  float: left;
+}
+
+.round img {
+    opacity: 0;
+    float: left;
+}
+
+.row {
+  background-image: url('bg.png');
+  background-repeat: repeat-y;
+    -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  margin-left: 0px;
+}
+
+.btn {
+  margin-top: 0px;
+}
+
+.info-graphic {
+  width: 150px;
+  background-color: #eee;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-right: 20px;
+  float: left;
+}
+
+.info-graphic h3 {
+  font-family: 'Glegoo', serif; 
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.info-graphic p {
+  width: 135;
+  margin: 12px;
+  font-size: 12px;
+}
